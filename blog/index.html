@@ -15,9 +15,9 @@ layout: default
 				<!-- Blog -->
 					<section>
 						<header class="major">
-							<h2>The Blog</h2>
+							<h2>{{ page.title }}</h2>
 						</header>
-						{% for post in site.posts offset: 0 limit: 4 %}
+						{% for post in site.posts offset: 0 limit: 3 %}
 						<div class="row">
 							<div class="10u -1u">
 								<section class="box">
