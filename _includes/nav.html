@@ -10,22 +10,21 @@
 					<ul>
 						<li><a href="{{ site.baseurl }}/index.html">Home</a></li>
 						<li>
-							<a href="">Dropdown</a>
+							<a href="">Projects</a>
 							<ul>
-								<li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-								<li><a href="#">Magna phasellus</a></li>
-								<li><a href="#">Etiam dolore nisl</a></li>
 								<li>
-									<a href="">Phasellus consequat</a>
+									<a href="">Project One</a>
 									<ul>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam dolore nisl</a></li>
-										<li><a href="#">Veroeros feugiat</a></li>
-										<li><a href="#">Nisl sed aliquam</a></li>
-										<li><a href="#">Dolore adipiscing</a></li>
+										<li><a href="{{ site.baseurl }}/blog">Project Story</a></li>
 									</ul>
 								</li>
-								<li><a href="#">Veroeros feugiat</a></li>
+								<li>
+									<a href="">Project Two</a>
+									<ul>
+										<li><a href="{{ site.baseurl }}/blog">Project Story</a></li>
+										<li><a href="{{ site.baseurl }}/blog">Project Timeline</a></li>
+									</ul>
+								</li>
 							</ul>
 						</li>
 						{% assign current = page.url | downcase | split: '/' %}
