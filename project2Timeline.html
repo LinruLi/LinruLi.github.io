@@ -1,0 +1,171 @@
+---
+title: Dopetrope
+layout: default
+---
+	<body class="timeline">
+
+		{% include nav.html %}
+
+		<!-- Main -->
+			<div id="main-wrapper">
+
+					<!-- Content -->
+					<div class="timeline-container">
+
+						<div class="timeline-item" date-is='July17th - 19th'>
+							<p class="timeline-p">
+								Woking on PathMapper interface design, decide how many screens do we need and what they will be looked like.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='20th - 21st'>
+							<p class="timeline-p">
+								Finish a ideal wired framework, and had a discussion with team member to see what changes need to be made to suit other functionality.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='22nd - 23rd'>
+							<p class="timeline-p">
+								Get current device location displayed on the Google Map using Google Maps Location API, then add sone permission checking for devices which their android version is higher than Android 6.0
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='24th - 26th'>
+							<p class="timeline-p">
+								Working on Local Plants Data Storage, changes original http call to our own implemented server to fetch data.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='27th'>
+							<p class="timeline-p">
+								Get QR code reader going, now users are able to scan QR code using the app.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='28th'>
+							<p class="timeline-p">
+								Merge personal work branch to master branch, resolved all conflicts.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='29th - August 2nd'>
+							<p class="timeline-p">
+								Had a walk around Garden to test the GPS accuracy, and did some changes on the code for getting better position. Enable current device location sign on the map along with a bearing feature. Also had a look at the clustering for next step.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='3rd - 7th'>
+							<p class="timeline-p">
+								Get clustering feature going, optimise clustering method at a better decluster zoom value.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='8th - 13th'>
+							<p class="timeline-p">
+								Find that cluster can not actually groups two collection of POI all at one time, we then made another decision on adding lat and lng to database, therefore just use marker instead to show them all on the map at once. After clicking one specific collection marker, the screen would then take you to all POI of that collection showing by markers.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='14th'>
+							<p class="timeline-p">
+								Took app and had a walk around in the Garden with Patricia, turns out the GPS accuracy performance varies on different android device, sometimes some old phone cant not really get a good GPS accuracy so we have to think of some ways to sort this out. Had a group meeting after this walk around, and we decided to give a user a option to turn off the GPS for just simply viewing the map. Beside, Clustering did not really meet the expectation as we think of before, so our final decision on this was get rid of clustering totally, rather showing a marker straight away.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='14th -15th'>
+							<p class="timeline-p">
+								Had a basic mock up for the changing on markers.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='16th'>
+							<p class="timeline-p">
+								Had a meeting with Clare, talk about more functions needed, more information was collected from our conversation.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='17th - 20th'>
+							<p class="timeline-p">
+								Fixing bugs, merge things into master to make sure everything works fine with others code, adding info window for showing more info after u tap a specific collection.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='21st - 23rd'>
+							<p class="timeline-p">
+								Fixed all bugs list below <br>
+								1. red markers go away and don't come back<br>
+								2. show collection items on map activates overlay<br>
+								3. tap item marker opens lots of things that you have to go back through to get to the map<br>
+								4. red item markers do not close when you exit collections view<br>
+								5. if you open the item details activity then muck around a bit then go back to map and click a different item the app crashes, something todo with tags<br>
+								6. sometimes the app hits the memory limit and crashes<br>
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='24th - 30th'>
+							<p class="timeline-p">
+								Our group decide to implement a rough GPS location when user suffer a bad GPS accuracy then have to turn it off. The idea is when user scan a QR point, after showing info of the scanned item, then back to main map will show them a marker indicate a rough user location. Job done by me by 30th.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='Sep 1st - 3rd'>
+							<p class="timeline-p">
+								Fix some bugs about the GPS off mode location detection. Also, menu was redesigned by me for a better looking and feeling, at the same time reducing APK size result in a better performance.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='4th'>
+							<p class="timeline-p">
+								Changing launch icon to official botanic icon, more good looking of menu being; Had a long session talk about entire APP feeling, design and user interface logic with Patricia. The conclusion turn out which this wasn’t good enough because things like two-layer-structured collection and item markers would really confused user. After meeting Matt me and Andrew had talk about this again on how to optimise the layout: keep previous info window showing after user tap a collection marker on the screen, but rather than go straight to deeper layer of showing its item markers of the collection, we decide to have a total separated activity screen including a map fragment that only show that collection items user want to look at, then make those marks being clickable, replace the map fragment and eventually show user that specific item information.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='5th - 6th'>
+							<p class="timeline-p">
+								1.Had a conversation with one of my friend doing professional user interactive design , he gave me more valid ideas about how our App could be more user-friendly by having a different App structure he suggested.<br>
+								2.Did peer programming with Matt and Andrew to get a map fragment working in the seperate activity with multiple layout involved.<br>
+								3.Discussion in the group that add listView back in showing all items of selected collection, implement design of scroll view for entire collectionMap fragment.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='7th - 10th'>
+							<p class="timeline-p">
+								listView was now showing back in to the screen. Also every item in the list was link to that specific marker on the map so that when user tap one of it, a  responding marker will be highlighted on the map.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='11th - 13th'>
+							<p class="timeline-p">
+								Implementing an entire scrollView seemed hard for the user to scroll when they mean to scroll only the listView or the map fragment, so our final decision on changing the layout was to fix the whole layout, and put a button that able to make listView being expandable.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='14th - 17th'>
+							<p class="timeline-p">
+								Give it to more people for testing, ask their ideas, fill in testing sheets. Change all icons in the App to be copyright free, optimise looking and feeling of App design.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='18th - 20th'>
+							<p class="timeline-p">
+								Fix bugs about App compatibility on lower API devices, more adorable layout when it’s running on a small screen device.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='21st - 25th'>
+							<p class="timeline-p">
+								1.Add ‘tap-twice-to-exsit’ function and now menu are able to be hide by press hard back button on some devices.<br>
+								2.Fixed all bugs find earlier, make Path mapper all ready to go (Beta version).<br>
+								3.Add more commenting in the code.<br>
+								4.Finishing my part of documenting and merged others to be one whole document as our final version of Path Mapper documentation.
+							</p>
+						</div>
+
+						<div class="timeline-item" date-is='26th - 29th'>
+							<p class="timeline-p">
+								Find more bugs from more user testing, make a new bug list for further debugging.
+							</p>
+						</div>
+
+					</div>
+			</div>
