@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Projects
 layout: default
 ---
 <body>
@@ -17,7 +17,7 @@ layout: default
 						<header class="major">
 							<h2>{{ page.title }}</h2>
 						</header>
-						{% for post in site.posts offset: 0 limit: 3 %}
+						{% for post in site.posts offset: 0ß %}
 						<div class="row">
 							<div class="10u -1u">
 								<section class="box">
@@ -29,8 +29,7 @@ layout: default
 									{{ post.excerpt }}
 									<footer>
 										<ul class="actions">
-											<li><a href="{{ site.baseurl }}/2014/08/31/hello-word.html" class="button icon fa-file-text">Continue Reading</a></li>
-											<li><a href="#" class="button alt icon fa-comment">33 comments</a></li>
+											<li><a href="{{ site.baseurl }}{{post.url}}" class="button icon fa-file-text">Continue Reading</a></li>
 										</ul>
 									</footer>
 								</section>
