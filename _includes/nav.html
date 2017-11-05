@@ -9,26 +9,12 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="{{ site.baseurl }}/index.html">Home</a></li>
-						<li {% if current[1] == '{{ site.baseurl }}/blog' %}class='current'{% endif %}>
-							<a href="">Projects</a>
-							<ul>
-								<li>
-									<a href="">Project One</a>
-									<ul>
-										<li><a href="{{ site.baseurl }}/2017/05/20/Project-One.html">Project Story</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="">Project Two</a>
-									<ul>
-										<li><a href="{{ site.baseurl }}/2017/10/21/Project-Two.html">Project Story</a></li>
-										<li><a href="{{ site.baseurl }}/project2Timeline.html">Project Timeline</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
 						{% assign current = page.url | downcase | split: '/' %}
-						<li {% if current[1] == 'right-sidebar.html' %}class='current'{% endif %}><a href="#">CV</a></li>
+						<li {% if current[1] == '{{ site.baseurl }}/blog' %}class='current'{% endif %}>
+							<a href="{{ site.baseurl }}/blog">Projects</a>
+						</li>
+
+						<li {% if current[1] == 'cv.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/cv.html">CV</a></li>
 						<li {% if current[1] == 'no-sidebar.html' %}class='current'{% endif %}><a href="#">About</a></li>
 					</ul>
 				</nav>

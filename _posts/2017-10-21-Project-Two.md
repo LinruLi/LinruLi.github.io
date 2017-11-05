@@ -1,8 +1,7 @@
 ---
-title: Otago Polytechnic Project two Story
+title: Otago Polytechnic Project Two
 featured: /assets/images/pic02.jpg
 layout: post
 ---
 
-<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Just like what one of my group members said before: "Project group has been a ride of many ups and downs, stress, laughs, and feelings of accomplishment." Throughout this whole year studying in the Community Software group, I am not only learned a bunch of new skills that would become useful in my future career, but I also knew a lot of nice people and reaped lasting friendship. More importantly, I am now more confident and more prepared to get into the real working environment, to adapt, to adjust and anneal myself to new changes.</p>
