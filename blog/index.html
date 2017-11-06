@@ -18,7 +18,7 @@ layout: default
 							<h2>{{ page.title }}</h2>
 						</header>
 						{% for post in site.posts offset: 0ß %}
-						{% if post.title != 'Project Story' %}
+						{% if post.title contains 'Project' %}
 						<div class="row">
 							<div class="10u -1u">
 								<section class="box">
