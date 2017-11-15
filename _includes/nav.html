@@ -11,11 +11,11 @@
 						<li><a href="{{ site.baseurl }}/index.html">Home</a></li>
 						{% assign current = page.url | downcase | split: '/' %}
 						<li {% if current[1] == '{{ site.baseurl }}/blog' %}class='current'{% endif %}>
-							<a href="{{ site.baseurl }}/blog">Projects</a>
+							<a href="{{ site.baseurl }}/blog/">Projects</a>
 						</li>
 
 						<li {% if current[1] == 'cv.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/cv.html">CV</a></li>
-						<li {% if current[1] == 'no-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/about.html">About</a></li>
+						<li {% if current[1] == 'about.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/about.html">About</a></li>
 					</ul>
 				</nav>
 
