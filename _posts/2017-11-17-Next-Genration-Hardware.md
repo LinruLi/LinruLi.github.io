@@ -1,5 +1,5 @@
 ---
-title: Next Generation Networked Hardware
+title: Next Generation Networked Hardware Project
 featured: /assets/images/pic06.jpg
 layout: post
 ---
